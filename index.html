@@ -1,1 +1,211 @@
+<!DOCTYPE html>
 
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Welcome to the Job Portal</h1>
+
+    </header>
+
+
+
+    <!-- Homepage displaying job postings -->
+
+    <div id="homepage">
+
+        <h2>Current Job Postings</h2>
+
+        <div id="all-job-listings">
+
+            <!-- Job postings will be displayed here -->
+
+        </div>
+
+        <div id="button-container"> <!-- New container for buttons -->
+
+            <button id="login-btn">Login</button>
+
+            <button id="signup-btn">Sign Up</button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Signup form -->
+
+    <div id="signup-form" class="auth-form">
+
+        <h2>Sign Up</h2>
+
+        <form id="signup">
+
+            <label for="signup-username">Username:</label>
+
+            <input type="text" id="signup-username" name="username" required><br>
+
+            <label for="signup-password">Password:</label>
+
+            <input type="password" id="signup-password" name="password" required><br>
+
+            <label for="signup-role">Role:</label>
+
+            <select id="signup-role" name="role">
+
+                <option value="student">Student</option>
+
+                <option value="employer">Employer</option>
+
+            </select><br>
+
+            <button type="submit">Sign Up</button>
+
+        </form>
+
+        <button id="back-to-home">Back to Home</button>
+
+    </div>
+
+
+
+    <!-- Login form -->
+
+    <div id="login-form" class="auth-form">
+
+        <h2>Login</h2>
+
+        <form id="login">
+
+            <label for="username">Username:</label>
+
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label>
+
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <button id="back-to-home-from-login">Back to Home</button>
+
+    </div>
+
+
+
+    <!-- Dashboards for different user types -->
+
+    <div id="student-dashboard" class="dashboard">
+
+        <h2>Student Dashboard</h2>
+
+        <div id="job-listings">
+
+            <!-- Job postings will be displayed here -->
+
+        </div>
+
+        <button id="back-to-home-from-dashboard">Back to Home</button>
+
+    </div>
+
+
+
+    <div id="employer-dashboard" class="dashboard">
+
+        <h2>Employer Dashboard</h2>
+
+        <p>Welcome, Employer! Post your jobs below:</p>
+
+        <button id="open-post-job-modal">Post a New Job</button>
+
+        <button id="back-to-home-from-dashboard">Back to Home</button>
+
+    </div>
+
+    
+
+    <!-- Modal for posting jobs -->
+
+    <div id="post-job-modal" class="modal" style="display: none;">
+
+        <div class="modal-content">
+
+            <span id="close-post-job-modal" class="close">&times;</span>
+
+            <form id="post-job">
+
+                <label for="job-title">Job Title:</label>
+
+                <input type="text" id="job-title" name="job-title" required>
+
+                <label for="job-description">Job Description:</label>
+
+                <textarea id="job-description" name="job-description" required></textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="admin-dashboard" class="dashboard">
+
+        <h2>Admin Dashboard</h2>
+
+        <div id="pending-postings">
+
+            <!-- Pending job postings will be displayed here for admin approval -->
+
+        </div>
+
+        <button id="back-to-home-from-dashboard">Back to Home</button>
+
+    </div>
+
+
+
+    <!-- Notification Div -->
+
+    <div id="notification" class="notification">
+
+        <!-- Notification message will be displayed here -->
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<div id="student-dashboard" class="dashboard">
+    <h2>Student Dashboard</h2>
+    <div id="job-listings">
+        <!-- Approved job postings will be displayed here -->
+    </div>
+    <button id="back-to-home-from-dashboard">Back to Home</button>
+</div>
