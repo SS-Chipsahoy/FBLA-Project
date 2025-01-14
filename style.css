@@ -1,1 +1,219 @@
+/* General page styles */
 
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+header {
+
+    background-color: #4CAF50;
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: center;
+
+}
+
+
+
+#homepage {
+
+    padding: 20px;
+
+    text-align: center;
+
+    position: relative; /* Allow absolute positioning of child elements */
+
+}
+
+
+
+#button-container {
+
+    position: absolute; /* Position the button container absolutely */
+
+    top: 20px; /* Distance from the top */
+
+    right: 20px; /* Distance from the right */
+
+}
+
+
+
+.auth-form {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+
+
+.dashboard {
+
+    display: none;
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+
+
+button {
+
+    margin: 10px;
+
+    padding: 10px 20px;
+
+    background-color: #4CAF50;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+
+
+button:hover {
+
+    background-color: #45a049;
+
+}
+
+
+
+/* Notification styles */
+
+.notification {
+
+    position: fixed;
+
+    bottom: 10px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #4CAF50; /* Green color for success */
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    display: none; /* Initially hidden */
+
+    z-index: 1000;
+
+    font-size: 16px;
+
+    opacity: 0;
+
+    transition: opacity 0.5s ease;
+
+}
+
+
+
+/* Show notification with animation */
+
+.notification.show {
+
+    display: block;
+
+    opacity: 1;
+
+}
+
+
+
+/* Modal Baground */
+
+.modal {
+
+    display: none; /*Hidden by Default */
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1000;
+
+}
+
+
+
+/* Modal Content Box */
+
+.modal-content {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    width: 90%;
+
+    max-width: 400px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+}
+
+
+
+/* Close Button  */
+
+.close-button {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #555;
+
+    float: right;
+
+    cursor: pointer;
+
+}
