@@ -702,6 +702,11 @@ function displayApprovedJobs() {
         `;
         jobListings.appendChild(jobDiv);
     });
+    
+    const user = {
+    role: 'student' // or 'admin', depending on the user's role
+};
+
 }
 
 if (user.role === 'student') {
