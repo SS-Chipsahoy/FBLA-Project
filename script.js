@@ -702,17 +702,6 @@ function displayApprovedJobs() {
         `;
         jobListings.appendChild(jobDiv);
     });
-    
-    const user = {
-    role: 'student' // or 'admin', depending on the user's role
-};
-    
-    let user; // Declare `user` globally
-
-function getUserData() {
-    user = { role: 'student' }; // Assign value to global `user`
-    
-}
 
 getUserData();
 
