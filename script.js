@@ -724,7 +724,7 @@ console.log('User role:', user?.role);
 // More Debugging 
 
 
-if (user && user.role === 'student') {
+if (user.role === 'student') {
     document.getElementById('student-dashboard').style.display = 'block';
     displayApprovedJobs();
 } else {
